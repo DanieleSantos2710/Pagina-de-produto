@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #header {
+    width: 100%;
+    height: 108px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+  
+  h2, p {
+    font-family: 'Shippori Antique B1', sans-serif;
+  }
+  
+  img {
+    width: 190px;
+  }
+  
+  li > a{
+    text-decoration: none;
+  }
+  
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+  }
+  
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    font-family: 'Shippori Antique B1', sans-serif;
+  }
+  
+  nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+  }
+  
+  #contact {
+    display: block;
+    padding-top: 150px; 
+    
+  }
+  
+  input[id="email"] {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 30px;
+  }
+  
+  input[name="submit"] {
+    display: block;
+    margin: 0 auto ;
+    width: 125px;
+    height: 30px;
+  }
+  
+  input[placeholder="Coloque seu Email"] {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  form > h2 {
+    text-align: center;
+  }
+  
+  #contact {
+    background-color: #9370DB;
+    border: 1px solid #7B68EE; 
+    height: 300px;
+    margin: 10px;
+  }
+  
+  section[id="information"] {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+    border-bottom: 3px solid #7B68EE; 
+  }
+  
+  .icon {
+    display: flex;
+    color: #7B68EE;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .materials {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    padding: 15px
+  }
+  
+  .delivery {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .warranty {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  #how-it-works {
+    display: block;
+  }
+    
+  #how-it-works > iframe {
+    display: block;
+    margin: 0 auto;
+    border-bottom: 2px solid #7B68EE; 
+  }
+  
+  #product {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 4);
+    margin: 10px;
+    border: 2px solid black;
+  }
+  
+  .product > .name {
+    background-color: #9370DB;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Shippori Antique B1', sans-serif;
+  }
+  
+  .product > h2 {
+    margin-top: 15px;
+  }
+  
+  li {
+    list-style: none;
+    font-family: 'Shippori Antique B1', sans-serif;
+  }
+  
+  .product > ol > li {
+    padding: 12px 0;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #9370DB;
+    font-weight: 400;
+  } 
+  
+  .btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    text-transform: uppercase;  
+  }
+  
+  footer {
+    margin-top: 30px;
+    background-color: #9370DB;
+    padding: 20px;
+  }
+  
+  span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black 
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer > ul > li {
+    padding: 0 10; 
+  }
+  
+  @media (max-width: 800px) {
+    #product {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    iframe {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 0%;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    #information {
+      flex-direction: column;
+    }
+    .materials {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .delivery {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .warranty {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
